@@ -10,9 +10,9 @@ import Lottie
 
 class ViewController: UIViewController {
     
-    var animationView: AnimationView? //directly by coding
+    var animationView: AnimationView?
 
-    @IBOutlet weak var animView: AnimationView! //taking view outlet
+    @IBOutlet weak var animView: AnimationView! 
     
     
     
@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         //Directly by coding
         animationView = .init(name: "Studying") //initialize animation
 //        animationView?.frame = view.bounds //setting frame to the bounds of superview
-        animationView?.frame = CGRect(x: 20, y: 20, width: 300, height: 300) //setting frame to the bounds of superview
-        animationView?.play()               //icon will start playing
-        animationView?.loopMode = .loop     //icon will be looped by itself
-        animationView?.animationSpeed = 3   //to adjust icon speed
+        animationView?.frame = CGRect(x: 20, y: 20, width: 300, height: 300)
+        animationView?.play()
+        animationView?.loopMode = .loop     //animation will be looped by itself
+        animationView?.animationSpeed = 3   //to adjust animation speed
         view.addSubview(animationView!)     //add animationview to superview
         
         
